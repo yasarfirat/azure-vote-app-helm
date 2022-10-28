@@ -1,0 +1,26 @@
+# Custom values for VCPI-Cockpit-BE Dev Environment.
+# This is a YAML-formatted file.
+
+replicaCount: 1
+
+image:
+  pullPolicy: IfNotPresent
+  repository: bmw/vcpi-cockpit-be
+  tag: v1.0
+
+imagePullSecrets: []
+
+resources: {}
+  # To specify custom resource limit uncomment here.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

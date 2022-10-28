@@ -1,0 +1,4 @@
+apiVersion: v2
+description: Azure-Vote-BE chart for Kubernetes
+name: Azure-Vote-BE
+version: 0.1.0
