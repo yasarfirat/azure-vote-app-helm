@@ -35,13 +35,13 @@ spec:
           - name: REDIS
             value: "azure-vote-back"
           livenessProbe:
-            httpGet:
-              path: /
-              port: 80
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 80
+          #   httpGet:
+          #     path: /
+          #     port: 80
+          # readinessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: 80
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
